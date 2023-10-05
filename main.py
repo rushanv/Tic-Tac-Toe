@@ -140,9 +140,8 @@ while running:
                         running = False
                     pygame.display.flip()
 
-if won:
-    while won:
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                pygame.quit()
-                won = False
+while won:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
+            won = False
